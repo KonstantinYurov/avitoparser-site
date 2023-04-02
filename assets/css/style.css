@@ -4,32 +4,32 @@
 
 @font-face {
     font-family: "FuturaPT Book";
-  src: url("/assets/fonts/FuturaPT-Book.eot");
-  src: local("☺"), url("/assets/fonts/FuturaPT-Book.woff") format("woff"), url("/assets/fonts/FuturaPT-Book.ttf") format("truetype");
+  src: url("assets/fonts/FuturaPT-Book.eot");
+  src: local("☺"), url("assets/fonts/FuturaPT-Book.woff") format("woff"), url("assets/fonts/FuturaPT-Book.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "FuturaPT Demi";
-  src: url("/assets/fonts/FuturaPT-Demi.eot");
-  src: local("☺"), url("/assets/fonts/FuturaPT-Demi.woff") format("woff"), url("/assets/fonts/FuturaPT-Demi.ttf") format("truetype");
+  src: url("assets/fonts/FuturaPT-Demi.eot");
+  src: local("☺"), url("assets/fonts/FuturaPT-Demi.woff") format("woff"), url("assets/fonts/FuturaPT-Demi.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "FuturaPT Light";
-  src: url("/assets/fonts/FuturaPT-Light.eot");
-  src: local("☺"), url("/assets/fonts/FuturaPT-Light.woff") format("woff"), url("/assets/fonts/FuturaPT-Light.ttf") format("truetype");
+  src: url("assets/fonts/FuturaPT-Light.eot");
+  src: local("☺"), url("assets/fonts/FuturaPT-Light.woff") format("woff"), url("assets/fonts/FuturaPT-Light.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "FuturaPT Medium";
-  src: url("/assets/fonts/FuturaPT-Medium.eot");
-  src: local("☺"), url("/assets/fonts/FuturaPT-Medium.woff") format("woff"), url("/assets/fonts/FuturaPT-Medium.ttf") format("truetype");
+  src: url("assets/fonts/FuturaPT-Medium.eot");
+  src: local("☺"), url("assets/fonts/FuturaPT-Medium.woff") format("woff"), url("assets/fonts/FuturaPT-Medium.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "FuturaPT Heavy";
-  src: url("/assets/fonts/FuturaPT-Heavy.eot");
-  src: local("☺"), url("/assets/fonts/FuturaPT-Heavy.woff") format("woff"), url("/assets/fonts/FuturaPT-Heavy.ttf") format("truetype");
+  src: url("assets/fonts/FuturaPT-Heavy.eot");
+  src: local("☺"), url("assets/fonts/FuturaPT-Heavy.woff") format("woff"), url("assets/fonts/FuturaPT-Heavy.ttf") format("truetype");
 }
 
 /*-----------------------------Подключение шрифтов локально END-----------------------------*/
@@ -158,7 +158,7 @@ strong {
     width: 759px;
     height: 257px;
     margin: 0px auto;
-    background: url(/assets/img/test-background.svg);
+    background: url(assets/img/test-background.svg);
     display: flex;
     justify-content: right;
     align-items: center;
@@ -293,7 +293,7 @@ strong {
     max-width: 1622px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 170px;
-    background: url("/assets/img/mask-price-group-suf.png");
+    background: url("assets/img/mask-price-group-suf.png");
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -511,7 +511,7 @@ strong {
     .test-group {
         width: 320px;
         height: 101.62px;
-        background: url(/assets/img/test-background-mobile.svg);
+        background: url(assets/img/test-background-mobile.svg);
         margin-bottom: 55px;
     }
 
@@ -570,7 +570,7 @@ strong {
 
 @media (max-width: 360px) {
     .price-block__container {
-        background: url("/assets/img/mask-price-group-suf-mob.png");
+        background: url("assets/img/mask-price-group-suf-mob.png");
         border-radius: 30px;
         background-repeat: no-repeat;
     }

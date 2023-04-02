@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+/*-----------------------------Подключение шрифтов локально START-----------------------------*/
+
+@font-face {
+    font-family: "FuturaPT Book";
+  src: url("/assets/fonts/FuturaPT-Book.eot");
+  src: local("☺"), url("/assets/fonts/FuturaPT-Book.woff") format("woff"), url("/assets/fonts/FuturaPT-Book.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "FuturaPT Demi";
+  src: url("/assets/fonts/FuturaPT-Demi.eot");
+  src: local("☺"), url("/assets/fonts/FuturaPT-Demi.woff") format("woff"), url("/assets/fonts/FuturaPT-Demi.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "FuturaPT Light";
+  src: url("/assets/fonts/FuturaPT-Light.eot");
+  src: local("☺"), url("/assets/fonts/FuturaPT-Light.woff") format("woff"), url("/assets/fonts/FuturaPT-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "FuturaPT Medium";
+  src: url("/assets/fonts/FuturaPT-Medium.eot");
+  src: local("☺"), url("/assets/fonts/FuturaPT-Medium.woff") format("woff"), url("/assets/fonts/FuturaPT-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "FuturaPT Heavy";
+  src: url("/assets/fonts/FuturaPT-Heavy.eot");
+  src: local("☺"), url("/assets/fonts/FuturaPT-Heavy.woff") format("woff"), url("/assets/fonts/FuturaPT-Heavy.ttf") format("truetype");
+}
+
+/*-----------------------------Подключение шрифтов локально END-----------------------------*/
+
+/*-----------------------------Обнуляющие стили START-----------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+/* делает теги nav, footer, header. aside - блочными */
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+/* ниже параметры, которые уравнивают поведение шрифтов в этих тегах nav, footer, header. aside для разных браузеров, например, запрещают увеличение шрифтов на айфонах */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* здесь обращаемся к шрифтам в тегам form и просим наследовать их семейство шрифта, так как по умолчанию они его не наследуют  */
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+/* здесь так же чистим стили в некоторых тегах, лишние отступы и т.д */
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+/*-----------------------------Обнуляющие стили END-----------------------------*/
+
+body {
+    font-family: "FuturaPT Book";
+    background-color: #ecf2f6;
+}
+
+.wrapper {
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
+.container-big {
+    max-width: 1622px;
+    margin: 0px auto;
+}
+
+.header__container {
+    margin: 43px 0 0 0;
+    max-width: 1163.96px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__group {
+    display: flex;
+    width: 308px;
+    align-items: center;
+}
+
+.header__logo {
+    position: relative;
+}
+
+.header__svg {
+    width: 60px;
+    height: 60px;
+}
+
+.header__svg-background {
+    opacity: 0.5;
+    filter: blur(8.5px);
+    position: absolute;
+    top: 7px;
+    z-index: 0;
+}
+
+.header__abbreviation {
+    margin: 0px auto;
+    font-size: 30px;
+    font-family: "FuturaPT Heavy";
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.header__name {
+    font-size: 36px;
+    font-family: "FuturaPT Book";
+    margin: 0px auto;
+}
+
+.header__name strong {
+    font-family: "FuturaPT Heavy";
+}
+
+.header__telegram-icon svg {
+    transition: transform 0.3s ease-in-out;
+}
+
+.header__telegram-icon svg:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 1602px) {
+    .container-big {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media (max-width: 1160px) {
+    .container {
+        padding: 0 20px 0 20px;
+    }
+}
+
+@media (max-width: 796px) {
+    .header__container {
+        margin: 27px 0 86px 0;
+        height: 49.82px;
+    }
+
+    .header__group {
+        max-width: 203px;
+    }
+
+    .header__svg {
+        width: 39.55px;
+        height: 39.55px;
+    }
+
+    .header__svg svg {
+        width: 39.55px;
+        height: 39.55px;
+    }
+
+    .header__abbreviation {
+        font-size: 19.7727px;
+    }
+
+    .header__name {
+        font-size: 23.73px;
+    }
+
+    .header__telegram-icon svg {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 360px) {
+    .container {
+        max-width: 320px;
+        padding: 0px;
+    }
+}

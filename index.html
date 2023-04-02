@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/assets/css/header.min.css">
+	<link rel="stylesheet" href="/assets/css/style.min.css">
+	<link rel="stylesheet" href="/assets/css/footer.min.css">
+	<title>Авитопарсер – программа по сбору данных с Авито</title>
+</head>
+<body>
+<div class="wrapper">
+	<div class="container-content">
+		<header class="header container">
+			<div class="header__container">
+				<div class="header__group">
+					<div class="header__logo">
+						<div class="header__abbreviation">АП</div>
+							<div class="header__svg">
+								<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<mask id="mask0_16_18" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+									<rect width="60" height="60" rx="17" fill="#C4C4C4"/>
+									</mask>
+									<g mask="url(#mask0_16_18)">
+									<g filter="url(#filter0_f_16_18)">
+									<circle cx="46.2602" cy="46.9013" r="29.7397" fill="#97CF26"/>
+									<circle cx="9.04398" cy="12.044" r="25.044" fill="#00AAFF"/>
+									<circle cx="14.4695" cy="45.7774" r="13.9568" fill="#A169F7"/>
+									<circle cx="43.6681" cy="16.0015" r="19.5656" fill="#FF6163"/>
+									</g>
+									</g>
+									<defs>
+									<filter id="filter0_f_16_18" x="-37" y="-34" width="134" height="131.641" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+									<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+									<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+									<feGaussianBlur stdDeviation="10.5" result="effect1_foregroundBlur_16_18"/>
+									</filter>
+									</defs>
+								</svg>
+								<div class="header__svg-background">
+									<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<mask id="mask0_16_18" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="60" height="60">
+										<rect width="60" height="60" rx="17" fill="#C4C4C4"/>
+										</mask>
+										<g mask="url(#mask0_16_18)">
+										<g filter="url(#filter0_f_16_18)">
+										<circle cx="46.2602" cy="46.9013" r="29.7397" fill="#97CF26"/>
+										<circle cx="9.04398" cy="12.044" r="25.044" fill="#00AAFF"/>
+										<circle cx="14.4695" cy="45.7774" r="13.9568" fill="#A169F7"/>
+										<circle cx="43.6681" cy="16.0015" r="19.5656" fill="#FF6163"/>
+										</g>
+										</g>
+										<defs>
+										<filter id="filter0_f_16_18" x="-37" y="-34" width="134" height="131.641" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+										<feGaussianBlur stdDeviation="10.5" result="effect1_foregroundBlur_16_18"/>
+										</filter>
+										</defs>
+									</svg>
+								</div>
+							</div>
+						</div>
+					<div class="header__name">
+						<span>авито<strong>парсер</strong></span>
+					</div>
+				</div>
+				<div class="header__telegram-icon">
+					<a href="">
+					<svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="27.9793" cy="27.9793" r="27.9793" fill="#40B3E0"/>
+					<path d="M37.9577 18.4915L34.2019 37.4271C34.2019 37.4271 33.6767 38.7403 32.2323 38.11L23.5655 31.4655L20.4141 29.9423L15.1091 28.1563C15.1091 28.1563 14.295 27.8675 14.2161 27.2372C14.1373 26.6069 15.1354 26.2656 15.1354 26.2656L36.2241 17.9928C36.2241 17.9928 37.9575 17.2312 37.9575 18.4918" fill="white"/>
+					<path d="M22.8995 37.2144C22.8995 37.2144 22.6465 37.1907 22.3311 36.1926C22.0162 35.1946 20.4141 29.9422 20.4141 29.9422L33.1515 21.8533C33.1515 21.8533 33.8869 21.4069 33.8606 21.8533C33.8606 21.8533 33.9919 21.9322 33.5978 22.2998C33.204 22.6676 23.5919 31.3079 23.5919 31.3079" fill="#D2E5F1"/>
+					<path d="M26.8889 34.0129L23.4611 37.1383C23.4611 37.1383 23.193 37.3417 22.8999 37.2142L23.5563 31.4088" fill="#B5CFE4"/>
+					</svg>
+					</a>
+				</div>
+			</div>
+		</header>
+
+<main>
+<section class="first-screen container">
+<div class="elipse-group-circle">
+<svg viewBox="0 0 762 782" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<circle cx="730.885" cy="498.885" r="259.115" stroke="#97CF26" stroke-width="47"/>
+	<circle cx="242.202" cy="10.2023" r="218.202" stroke="#00AAFF" stroke-width="47"/>
+	<circle cx="243.339" cy="500.021" r="121.602" stroke="#A169F7" stroke-width="47"/>
+	<circle cx="719.52" cy="7.92932" r="170.471" stroke="#FF6163" stroke-width="47"/>
+	</svg>
+</div>
+
+<div class="intro">
+	<div class="intro__box">
+		<p>Занимаешься арендой?</p>
+		<p>Тогда это твой шанс стать независимым!</p>
+	</div>
+</div>
+
+<div class="description-block">
+	<div class="description-block--conteiner">
+		<p>Своя собственная</p>
+		<h1>Программа по сбору данных <span>c авито</span></h1>
+		<p>Объявления выходят уже на стадии модерации.</p>
+	</div>
+	<div class="description-block__register-btn">
+		<button onclick="location.href='#section-1'">Зарегистрируйся</button>
+	</div>
+
+	<div class="description-block__line">
+		<svg width="1096" height="347" viewBox="0 0 1096 347" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M-106.994 206.471C77.0858 32.2254 288.245 -77.6784 456.524 70.9478C659.711 250.404 610.349 419.456 1095.01 312.471" stroke="url(#paint0_linear_25_68)" stroke-width="2"/>
+			<defs>
+			<linearGradient id="paint0_linear_25_68" x1="134.244" y1="38.3221" x2="1066.24" y2="316.322" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#97CF26"/>
+			<stop offset="1" stop-color="#97CF26" stop-opacity="0"/>
+			</linearGradient>
+			</defs>
+		</svg>
+	</div>
+</div>
+</section>
+
+<div class="test-group container">
+	<div class="test-group__text">
+		<p>Попробуй</p>
+		<p>Тест драйв (60 минут) – 1 ₽</p>
+	</div>
+	<div class="test-group__img">
+		<img src="/assets/img/ruble-test.webp" alt="">
+	</div>
+</div>
+
+<section class="advantages container">
+	<div class="advantages__container"></div>
+		<div class="advantages__title">
+			<h2>Преимущества</h2>
+		</div>
+		<div class="advantages__description">
+			<div class="advantages__line">
+				<svg width="642" height="2709" viewBox="0 0 642 2709" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M320 2C120 528 631.619 221.671 636 516C596.048 784.168 -98 648 50 960C198 1272 591.152 1141.87 584 1416C577.561 1662.82 22.6005 1645.66 5.99988 1892C-11.3558 2149.55 862 2120 391.5 2705.5" stroke="url(#paint0_linear_49_9)" stroke-width="10" stroke-dasharray="30 30"/>
+					<defs>
+					<linearGradient id="paint0_linear_49_9" x1="332.666" y1="4" x2="332.666" y2="2705.5" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#00AAFF"/>
+					<stop offset="0.328125" stop-color="#FF6163"/>
+					<stop offset="0.682292" stop-color="#A169F7"/>
+					<stop offset="1" stop-color="#97CF26"/>
+					</linearGradient>
+					</defs>
+				</svg>					
+			</div>
+
+			<div class="advantages__roundgroup">
+				<svg width="1773" height="1929" viewBox="0 0 1773 1929" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="1659" cy="1815" r="114" fill="#97CF26"/>
+					<g filter="url(#filter0_d_25_56)">
+					<path d="M196 704C196 757.019 153.019 800 100 800C46.9807 800 4 757.019 4 704C4 650.981 46.9807 608 100 608C153.019 608 196 650.981 196 704Z" fill="#00AAFF"/>
+					</g>
+					<circle cx="589.5" cy="1561.5" r="53.5" fill="#A169F7"/>
+					<circle cx="1470" cy="75" r="75" fill="#FF6163"/>
+					<defs>
+					<filter id="filter0_d_25_56" x="0" y="608" width="200" height="200" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+					<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+					<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+					<feOffset dy="4"/>
+					<feGaussianBlur stdDeviation="2"/>
+					<feComposite in2="hardAlpha" operator="out"/>
+					<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+					<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_25_56"/>
+					<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_25_56" result="shape"/>
+					</filter>
+					</defs>
+				</svg>
+			</div>
+
+			<div class="advantages__roundgroup-mob">
+				<svg width="559" height="1939" viewBox="0 0 559 1939" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="482.586" cy="1862.59" r="75.5863" fill="#97CF26"/>
+					<circle cx="63.6516" cy="774.652" r="63.6516" fill="#00AAFF"/>
+					<circle cx="103.473" cy="1270.47" r="35.4725" fill="#A169F7"/>
+					<circle cx="470.013" cy="49.7278" r="49.7278" fill="#FF6163"/>
+				</svg>	
+			</div>
+
+			
+			<div class="advantages__grid">
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Автодозвон</h3></div>
+					<div class="advantages__grid-subtitile--one"><p>входит в стоимость подписки!</p></div>
+					<div class="advantages__grid-paragraph"><p>Тебе больше не нужно сидеть в ожидании пока появится номер, нажал на кнопку<strong>«автодозвон»</strong> и занимаешься своими делами. (Работает только на ноутбуке или компьютере)</p></div>
+				</div>
+				<div class="advantages__grid-image">
+					<img src="/assets/img/grid-hand-telephone.png" alt="">
+				</div>
+
+				<div class="advantages__grid-image--left">
+					<img src="/assets/img/grid-number-squared.png" alt="">
+				</div>
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Привяжем номер</h3></div>
+					<div class="advantages__grid-subtitile--two"><p>Бесплатно</p></div>
+					<div class="advantages__grid-paragraph"><p><strong>Бесплатные звонки</strong> на номера авито <strong>без блокировки</strong>! Больше не нужно менять симку! </p></div>
+				</div>
+
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Установим телефонию</h3></div>
+					<div class="advantages__grid-paragraph"><p>Если ты хочешь звонить с компьютера через интернет, то мы поможем это сделать! Звонки через интернет проходят <strong>быстрее чем обычные</strong>, к тому же, они <strong>в разы дешевле</strong>! Будь на шаг впереди!</p></div>
+				</div>
+				<div class="advantages__grid-image">
+					<img src="/assets/img/grid-support-worker.png" alt="">
+				</div>
+
+				<div class="advantages__grid-image--left">
+					<img src="/assets/img/grid-window.png" alt="">
+				</div>
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Выделение цветом</h3></div>
+					<div class="advantages__grid-paragraph"><p>Можешь <strong>выделять цветом</strong> объявления, одно нажатие - синий, два нажатия - красный. Помогает не путаться в информации и не терять концентрацию!</p></div>
+				</div>
+
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Фильтры</h3></div>
+					<div class="advantages__grid-paragraph"><p>Можно выбрать параметры, цену или просмотры, и отобразить в программе только нужные тебе объявления! А так же много других <strong>функций</strong>, которые помогут тебе в работе!</p></div>
+				</div>
+				<div class="advantages__grid-image">
+					<img src="/assets/img/grid-chat-group.png" alt="">
+				</div>
+			</div>
+
+			<div class="advantages__blue-line">
+				<svg width="1031" height="347" viewBox="0 0 1031 347" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1203.03 206.471C1018.95 32.2252 807.791 -77.6785 639.511 70.9477C436.324 250.404 485.686 419.456 1.02988 312.471" stroke="url(#paint0_linear_25_71)" stroke-width="2"/>
+					<defs>
+					<linearGradient id="paint0_linear_25_71" x1="961.791" y1="38.3219" x2="29.791" y2="316.322" gradientUnits="userSpaceOnUse">
+					<stop stop-color="#00AAFF"/>
+					<stop offset="1" stop-color="#00AAFF" stop-opacity="0"/>
+					</linearGradient>
+					</defs>
+				</svg>
+			</div>
+
+			<div class="advantages__grid--mob">
+				<div class="advantages__grid-image grid-image">
+					<img src="/assets/img/grid-hand-telephone.png" alt="">
+				</div>
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Автодозвон</h3></div>
+					<div class="advantages__grid-subtitile--one"><p>входит в стоимость подписки!</p></div>
+					<div class="advantages__grid-paragraph"><p>Тебе больше не нужно сидеть в ожидании пока появится номер, нажал на кнопку<strong>«автодозвон»</strong> и занимаешься своими делами. (Работает только на ноутбуке или компьютере)</p></div>
+				</div>
+
+				<div class="advantages__grid-image--left grid-image">
+					<img src="/assets/img/grid-number-squared.png" alt="">
+				</div>
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Привяжем номер</h3></div>
+					<div class="advantages__grid-subtitile--two"><p>Бесплатно</p></div>
+					<div class="advantages__grid-paragraph"><p><strong>Бесплатные звонки</strong> на номера авито <strong>без блокировки</strong>! Больше не нужно менять симку! </p></div>
+				</div>
+
+				<div class="advantages__grid-image grid-image">
+					<img src="/assets/img/grid-support-worker.png" alt="">
+				</div>
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Установим телефонию</h3></div>
+					<div class="advantages__grid-paragraph"><p>Если ты хочешь звонить с компьютера через интернет, то мы поможем это сделать! Звонки через интернет проходят <strong>быстрее чем обычные</strong>, к тому же, они <strong>в разы дешевле</strong>! Будь на шаг впереди!</p></div>
+				</div>
+
+				<div class="advantages__grid-image--left grid-image">
+					<img src="/assets/img/grid-window.png" alt="">
+				</div>
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Выделение цветом</h3></div>
+					<div class="advantages__grid-paragraph"><p>Можешь <strong>выделять цветом</strong> объявления, одно нажатие - синий, два нажатия - красный. Помогает не путаться в информации и не терять концентрацию!</p></div>
+				</div>
+
+				<div class="advantages__grid-image grid-image">
+					<img src="/assets/img/grid-chat-group.png" alt="">
+				</div>
+				<div class="advantages__grid-text grid-text">
+					<div class="advantages__grid-titile"><h3>Фильтры</h3></div>
+					<div class="advantages__grid-paragraph"><p>Можно выбрать параметры, цену или просмотры, и отобразить в программе только нужные тебе объявления! А так же много других <strong>функций</strong>, которые помогут тебе в работе!</p></div>
+				</div>
+			</div>
+
+		</div>
+</section>
+
+<section class="price-block container-big">
+	<div class="price-block__container">
+		<div class="price-block__wrapper">
+			<div class="price-block__title"><h2>Прайс</h2></div>
+				<div class="price-block__items container">
+
+					<div class="price-block__item">
+						<div class="price-block__item-price">1 500 ₽</div>
+						<div class="price-block__item-period">день</div>
+					</div>
+
+					<div class="price-block__item">
+						<div class="price-block__item-price">12 000 ₽</div>
+						<div class="price-block__item-period">неделя</div>
+					</div>
+
+					<div class="price-block__item">
+						<div class="price-block__item-price --white-price">40 000 ₽</div>
+						<div class="price-block__item-period">месяц</div>
+					</div>
+				</div>
+
+				<div class="price-block__subtext">Бесплатная консультация</div>
+				<div class="price-block__telephone">8 (800) 777-55-11</div>
+			</div>
+		</div>
+</section>
+</main>
+
+<footer>
+	<section class="ending-background">
+		<div class="ending container">
+		<div class="ending__uptitle">Устал быть чьим то сотрудником?</div>
+		<div class="ending__titile">Работай на себя и только по своим правилам!</div> 
+		<div class="ending__container">
+			<div class="ending__form">
+				<div class="ending__form-block form-block">
+					<form action="#" enctype="application/x-www-form-urlencoded" method="post">
+						<div id='section-1' class="form-block__title">Личный кабинет</div>
+
+						<div class="form-block__name-title">Имя</div>
+						<div class="form-block__name-field"><input name="name" required="Укажите ваше имя" type="text" value="" placeholder="Ваше имя"/></div>
+
+						<div class="form-block__tel-title">Телефон</div>
+						<div class="form-block__tel-field"><input name="tel" required="Укажите ваш номер телефона" type="tel" value="" placeholder="8___________"/></div>
+
+						<div class="form-block__checkbox"><input name="check" required="Чтобы продолжить, установите этот флажок" type="checkbox" value="yes"/> <a href="#" target="_blank" rel="noopener"><span>Согласен с политикой данных</span></a></div>
+
+						<button class="form-block__button" type="submit">Зарегистрируйся</button>
+					</form>
+				</div>
+			</div>
+
+			<div class="offer-block">
+				<div class="offer-block__container">
+					<div class="offer-block__image"><svg width="145" height="100" viewBox="0 0 145 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<circle cx="72" cy="50" r="50" fill="#00AAFF"/>
+						<path d="M76.4695 59.008H68.5335V29.312H76.4695V59.008ZM68.9175 71.424C67.9788 70.4427 67.5095 69.248 67.5095 67.84C67.5095 66.432 67.9788 65.2587 68.9175 64.32C69.8988 63.3387 71.0935 62.848 72.5015 62.848C73.9095 62.848 75.0828 63.3387 76.0215 64.32C77.0028 65.2587 77.4935 66.432 77.4935 67.84C77.4935 69.248 77.0028 70.4427 76.0215 71.424C75.0828 72.3627 73.9095 72.832 72.5015 72.832C71.0935 72.832 69.8988 72.3627 68.9175 71.424Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="offer-block__text"><p>Покупай подписку, работай по собственной базе, комиссия от сдачи полностью твоя, будь независим ни от кого!</p></div>
+				</div>
+			</div>
+		</div>
+		
+	
+		<div class="footer-picture">
+			<img src="/assets/img/businessman-in-dark-blue-suit.png" alt="">
+		</div> 
+
+		<div class="footer-logo">
+			<div class="footer-logo__conteiner">
+				<div class="footer-logo__image">АП</div>
+				<div class="footer__name">
+					<span>авито<strong>парсер</strong></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+</footer>
+			</div> <!----wrapper---->
+		</div> <!----container-content---->
+	</body>
+</html>
